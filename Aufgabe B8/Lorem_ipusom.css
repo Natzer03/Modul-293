@@ -1,0 +1,9 @@
+body {
+  background-color: mediumspringgreen;
+}
+nav {
+  align-content: left;
+}
+article {
+  align-self: center;
+}
