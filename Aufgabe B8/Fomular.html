@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fomular</title>
+  </head>
+  <body>
+    <form action="https://gibm.becknet.ch/formular/formular.php" method="post">
+      <div>
+        <!--Für Auswahl Frau-->
+        <label>Anrede *</label><br />
+        <input type="radio" name="anrede" id="frau" value="Frau" required />
+        <label for="frau">Frau</label>
+        <!--Für Auswahl Herr-->
+        <input type="radio" name="anrede" id="herr" value="Herr" required />
+        <label for="herr">Herr</label>
+        <!--Für Auswahl Anderes-->
+        <input
+          type="radio"
+          name="anrede"
+          id="anderes"
+          value="Anderes"
+          required
+        />
+        <label for="anderes">Anderes</label>
+      </div>
+      <div>
+        <label for="vorname">Vorname *</label><br />
+        <input
+          type="text"
+          id="vorname"
+          name="vorname"
+          minlength="1"
+          maxlength="30"
+          required
+        />
+      </div>
+      <div>
+        <label for="nachname">Nachname *</label><br />
+        <input
+          type="text"
+          name="nachname"
+          id="nachname"
+          minlength="1"
+          maxlenght="30"
+          required
+        />
+      </div>
+      <div>
+        <label for="strasse">Strasse *</label><br />
+        <input
+          type="text"
+          name="strasse"
+          id="strasse"
+          minlength="10"
+          maxlenght="100"
+          required
+        />
+      </div>
+      <div>
+        <label for="plz">PLZ * Ort</label><br />
+        <input
+          type="number"
+          name="plz"
+          id="plz"
+          min="1000"
+          max="9999"
+          required
+        />
+        <input
+          type="text"
+          name="ort"
+          id="ort"
+          minlength="5"
+          maxlength="100"
+          required
+        />
+      </div>
+      <div>
+        <label for="email">Email *</label><br />
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div>
+        <label for="nachricht">Nachricht</label><br />
+        <textarea
+          type="text"
+          name="nachricht"
+          id="nachricht"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Senden" />
+        <input type="reset" value="Löschen" />
+      </div>
+    </form>
+  </body>
+</html>
