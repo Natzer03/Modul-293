@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Lorem_ipusom.css" />
     <title>Fomular</title>
+    <style>
+      p.ridge {
+        border-style: ridge;
+      }
+    </style>
   </head>
   <body>
     <form action="https://gibm.becknet.ch/formular/formular.php" method="post">
@@ -44,7 +50,7 @@
           name="nachname"
           id="nachname"
           minlength="1"
-          maxlenght="30"
+          maxlength="30"
           required
         />
       </div>
@@ -55,7 +61,7 @@
           name="strasse"
           id="strasse"
           minlength="10"
-          maxlenght="100"
+          maxlength="100"
           required
         />
       </div>
@@ -85,7 +91,6 @@
       <div>
         <label for="nachricht">Nachricht</label><br />
         <textarea
-          type="text"
           name="nachricht"
           id="nachricht"
           cols="30"
@@ -97,5 +102,9 @@
         <input type="reset" value="Löschen" />
       </div>
     </form>
+    <p></p>
+    <button onclick="window.location.href = 'Lorem_ipsum.html';">
+      Hauptseite
+    </button>
   </body>
 </html>

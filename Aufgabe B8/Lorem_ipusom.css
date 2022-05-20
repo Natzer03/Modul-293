@@ -7,3 +7,17 @@ nav {
 article {
   align-self: center;
 }
+label {
+  align-content: center;
+  text-size-adjust: 10pt;
+}
+table,
+th,
+td {
+  border-width: 1pt;
+}
+form {
+  border-style: ridge;
+  border-collapse: collapse;
+  border-width: 51%;
+}
