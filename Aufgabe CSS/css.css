@@ -1,0 +1,40 @@
+body {
+  font-family: verdana;
+  font-size: 14px;
+}
+#wrapper {
+  width: 50%;
+  border-color: black;
+  border: solid;
+}
+h1 {
+  background-color: grey;
+  color: white;
+  font-size: 28px;
+}
+h2 {
+  color: blue;
+  font-size: 21px;
+}
+header strong {
+  color: red;
+}
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:active {
+  color: black;
+}
+a:hover {
+  color: red;
+  text-decoration: none;
+}
+a:visited {
+  color: grey;
+}
+
+ol :last-child {
+  text-decoration: line-through;
+}
