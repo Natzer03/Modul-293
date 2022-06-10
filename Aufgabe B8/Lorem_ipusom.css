@@ -1,15 +1,57 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+html {
+  background-color: white;
+}
 body {
+  max-width: 1200px;
+  margin: 0 auto;
   background-color: mediumspringgreen;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas:
+    "header header header"
+    "navigation content sidebar"
+    "footer footer footer";
 }
+
+header,
+nav,
+main,
+aside,
+footer {
+  border: 1px solid black;
+  min-height: 100px;
+  padding: 10px;
+}
+header {
+  grid-area: header;
+}
+
 nav {
-  align-content: left;
+  grid-area: navigation;
 }
-article {
+
+main {
+  grid-area: content;
+}
+aside {
+  grid-area: sidebar;
+}
+footer {
+  grid-area: footer;
+}
+
+.Content {
   align-self: center;
+  border: 2px solid black;
+  padding: 0px 10px;
 }
 label {
   align-content: center;
-  text-size-adjust: 10pt;
 }
 table,
 th,
@@ -19,5 +61,4 @@ td {
 form {
   border-style: ridge;
   border-collapse: collapse;
-  border-width: 51%;
 }
