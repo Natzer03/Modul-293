@@ -62,3 +62,35 @@ form {
   border-style: ridge;
   border-collapse: collapse;
 }
+@media screen and (max-width: 1200px) {
+  body {
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100px 150px 1fr 100px;
+    grid-template-areas:
+      "header header"
+      "navigation navigation"
+      "content sidebar"
+      "footer footer";
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  nav li {
+    padding: 0px;
+    margin: 10px;
+    list-style-type: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 150px 1fr 0.5fr 100px;
+    grid-template-areas:
+      "header"
+      "navigation"
+      "content"
+      "sidebar"
+      "footer";
+  }
+}
